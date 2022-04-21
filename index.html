@@ -1,9 +1,14 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <title>Identity test</title>
-    <link rel="stylessheet" href="styles.css">
+  <title>Netlify Identity</title>
+  <link rel="stylesheet" href="style.css"
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-
+  <div class="signin"  data-netlify-identity-button>Login with Netlify Identity</div>
+  <script>
+      const user = netlifyIdentity.currentUser();
+  </script>
 </body>
-
+</html>
