@@ -1,1 +1,2 @@
-netlifyIdentity.on('init', user => alert('init', user));
+netlifyIdentity.on('init', user => alert(netlifyIdentity.currentUser();));
+
