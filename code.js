@@ -1,6 +1,6 @@
-var s = netlifyIdentity.currentUser.user
+var s = document.getElementsByClassName('infoTextEmail');
 function login() {
-    alert(JSON.stringify(s))
+    alert(s.textContent)
 }
 
 netlifyIdentity.on('login', user => login());
