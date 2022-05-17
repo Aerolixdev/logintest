@@ -1,3 +1,2 @@
-netlifyIdentity.on('init', user => alert(netlifyIdentity.user()));
-
-
+var user = netlifyIdentity.currentUser()
+document.write(user)
