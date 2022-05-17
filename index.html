@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Netlify Identity</title>
-  <link rel="stylesheet" href="style.css"
+  <title>A static website</title>
+
+  <!-- include the widget -->
   <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-    <button class="signin" data-netlify-identity-button id="login">PRESSS</button>
-  <script>
-      const user = netlifyIdentity.currentUser();
-  </script>
+  <div data-netlify-identity-menu>
+    <div  data-netlify-identity-button>
+      <button onclick="netlifyIdentity.open();">Sign Up</button>
+    </div>
+  </div>
+
+
 </body>
 </html>
