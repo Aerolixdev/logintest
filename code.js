@@ -1,10 +1,9 @@
 var s = document.getElementsByClassName('infoTextEmail');
 function login() {
-    setTimeout(() => {  alert(s.textContent)}, 1000);
+    alert(netlifyIdentity.currentUser.email)
 }
 
 netlifyIdentity.on('login', user => login());
-
 
 
 
