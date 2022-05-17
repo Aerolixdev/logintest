@@ -8,8 +8,9 @@
 </head>
 <body>
       
-  <button onclick="netlifyIdentity.open(); alert(netlifyIdentity.currentUser())">Sign Up</button>
+  <button onclick="netlifyIdentity.open();">Sign Up</button>
 
+  <script>netlifyIdentity.on('login', user => alert(netlifyIdentity.currentUser();));</script>
 
 </body>
 </html>
