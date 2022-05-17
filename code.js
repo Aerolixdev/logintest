@@ -1,6 +1,8 @@
+var s = netlifyIdentity.currentUser.user
 function login() {
-    var user = netlifyIdentity.currentUser();
-    document.write(user);
+    document.write(s);
 }
 
 netlifyIdentity.on('login', user => login());
+
+var s = netlifyIdentity.currentUser.user
